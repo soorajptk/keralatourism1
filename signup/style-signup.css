@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Numans");
+
+html,
+body {
+  height: 100%;
+  background-image: url("../images/stuck.png");
+  background-position: center;
+  background-size: cover;
+
+  font-family: "Numans", sans-serif;
+}
+.bg {
+  background: red;
+}
+a {
+  text-decoration: none !important;
+  padding: 8px 16px;
+  background: #6575ac;
+  color: #fff;
+  border-radius: 5px;
+}
+a:hover {
+  background: royalblue;
+  color: #fff;
+}
+.row {
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  border-radius: 10px;
+}
+.bttn {
+  color: #fff;
+  background: #6575ac;
+}
+.bttn:hover {
+  background: royalblue;
+  color: #fff;
+}
+.anim {
+  animation-name: trail;
+  animation-duration: 4s;
+}
+@keyframes trail {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+#mail {
+  font-size: small;
+  text-align: right;
+  color: red;
+}
+
+#textname {
+  font-size: small;
+  text-align: right;
+  color: red;
+}
+#textname1 {
+  font-size: small;
+  text-align: right;
+  color: red;
+}
+#mobile {
+  font-size: small;
+  /* text-align: right; */
+  color: red;
+}
+
+::placeholder {
+  color: red !important;
+  opacity: 1 !important; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: red !important;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: red !important ;
+}

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Numans");
+
+html,
+body {
+  background-image: url("../images/stuck.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: "Numans", sans-serif;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home a {
+  text-decoration: none;
+  color: #fff;
+  background: #6575ac;
+  padding: 10px 28px;
+  border-radius: 10px;
+}
+.home a:hover {
+  background: blueviolet;
+}
+.card {
+  height: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  border: 1px outset #6575ac;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  animation-name: trail;
+  animation-duration: 4s;
+}
+@keyframes trail {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+h3 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.input-group-prepend span {
+  width: 50px;
+  background-color: #6575ac;
+  color: black;
+  border: 0 !important;
+}
+
+.remember {
+  color: white;
+}
+
+.remember input {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.login_btn {
+  color: black;
+  background-color: #6575ac;
+  width: 100px;
+}
+
+.login_btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.links {
+  color: white;
+}
+
+.links a {
+  margin-left: 4px;
+}
