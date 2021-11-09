@@ -3,20 +3,26 @@ let  lastName = document.getElementById("lastname");
 let mail= document.getElementById("email");
 let address= document.getElementById("Address");
 let mob = document.getElementById("mobileno");
+let passWord = document.getElementById("password");
+
 
 
 function validate(){
                 
-    // checking firstName valid
+    // for firstName 
     let x=firstName.value; 
     let firstlettername = x.charAt(0);  
-    
+    //for last name
     let v=lastName.value; 
     let lastlettername = v.charAt(0);  
     
-
+    //for mail
     let regexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+)\.([a-z]{2,3})(.[a-z]{2,3})?$/ 
     
+    //for password
+
+    var regularExpression = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+
 
  if(firstName.value.trim() =="")
 {
@@ -74,14 +80,26 @@ else if(firstlettername != firstlettername.toUpperCase())
                  
             }
               let phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-            if(phoneno.test(mob.value)){
-                return true;
-            }else{
+            if(!phoneno.test(mob.value)){
+
                 document.getElementById("mobile").innerHTML="plz follow this format 860-608-4471 &nbsp or &nbsp 860.608.4471";
                   mob.style.border="2px solid red";
                 return false;
-            }
-    
+            }else if(passWord.value.trim() =="")
+             {
+            passWord.setAttribute("placeholder","please enter your password");
+            passWord.style.border="2px solid red";
+            return false;
+             }else{
+                 let h =passWord.value;
+                 if(!regularExpression.test(h)){
+                    document.getElementById("passwordtxt").innerHTML="plz include 6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter";
+                    passWord.style.border="2px solid red";
+                      
+                return false;
+            
+        }
+        }
 
 
 
@@ -114,4 +132,8 @@ function mobchange(){
     mob.style.border="none";
     document.getElementById("mobile").innerHTML="";
     
+}
+function passwordchange(){
+    passWord.style.border="none";
+    document.getElementById("passwordtxt").innerHTML="";
 }

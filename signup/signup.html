@@ -48,6 +48,7 @@
                       <div class="form-group col-md-6">
                         <label for="lastname">Last Name</label>
                         <input type="text" class="form-control" onchange="inputname1()" id="lastname" >
+                        
                         <p id="textname1"></p>
                       </div>
                 
@@ -73,13 +74,13 @@
                        <label for="password">password</label>
                        
                         <div class="input-group form-group ">
-                          <input class="form-control" type="password" id="password" name="password"  value="" >
+                          <input class="form-control" type="text" id="password" onchange="passwordchange()" name="password"  value="" >
   
                           <div class="input-group-prepend">
                             <span class="input-group-text"><i class="far fa-eye" id="togglePassword" 
                               style="cursor: pointer"></i></span>
                           </div>
-
+                           <p id="passwordtxt"></p> 
                         </div>
                         </div>
                       <div class="form-group col-md-6">
@@ -91,7 +92,7 @@
                    
                        </div>
                        <div class="text-center">
-                       <button type="submit" id="submit" class="btn bttn mt-5 px-5  ">Submit</button>
+                       <button type="submit" id="submit" class="btn bttn mt-5 px-5 ">Submit</button>
                     </div>
                     </form>
                 </div>

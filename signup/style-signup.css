@@ -72,7 +72,10 @@ h2 {
 }
 #mobile {
   font-size: small;
-  /* text-align: right; */
+  color: red;
+}
+#passwordtxt {
+  font-size: small;
   color: red;
 }
 
