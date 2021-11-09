@@ -49,17 +49,13 @@ else if(firstlettername != firstlettername.toUpperCase())
           mail.setAttribute("placeholder","please enter your mail id");
           mail.style.border="2px solid red";
           return false;
-}else if(regexp.test(mail.value))
+}else if(!regexp.test(mail.value))
     {
-        return true;
-    }else{
         document.getElementById("mail").innerText="your email is not valid";
         mail.style.border="2px solid red";
         return false;
-    }
         
-        //mobilenum
-        if(mob.value.trim() =="")
+    }else  if(mob.value.trim() =="")
         {
             mob.setAttribute("placeholder","please enter your mobile num");
             mob.style.border="2px solid red";
