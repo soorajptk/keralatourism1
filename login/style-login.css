@@ -26,10 +26,8 @@ body {
   background: blueviolet;
 }
 .card {
-  height: 400px;
   margin-top: auto;
   margin-bottom: auto;
-  width: 400px;
   border: 1px outset #6575ac;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.5) !important;
@@ -84,4 +82,15 @@ h3 {
 
 .links a {
   margin-left: 4px;
+}
+@media (max-width: 700px) {
+  .box {
+    width: 75% !important;
+  }
+}
+#inform,
+#informer {
+  text-align: right;
+  color: red !important;
+  font-size: 13px;
 }
